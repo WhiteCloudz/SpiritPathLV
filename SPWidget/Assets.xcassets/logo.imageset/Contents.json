@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "f.bekirakbulut_Let_a_modern_Muslim_young_woman_and_man_read_boo_58c68d91-0f00-4d74-bd90-fa28e9930acc.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "f.bekirakbulut_Let_a_modern_Muslim_young_woman_and_man_read_boo_58c68d91-0f00-4d74-bd90-fa28e9930acc 1.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

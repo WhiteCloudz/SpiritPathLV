@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="KGk-i7-Jjw" customClass="DailyChartTableViewCell" customModule="SpiritPath" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-MP-37i">
+                        <rect key="frame" x="15" y="8" width="324" height="150"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R5Y-aE-Wzr">
+                                <rect key="frame" x="0.0" y="0.0" width="324" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tv-cD-sZK">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEa-sk-CMJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="125"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGZ-C9-VjU">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="150"/>
+                                                <color key="tintColor" red="0.99546676869999995" green="0.17803797129999999" blue="0.32828110459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Zikir ">
+                                                    <fontDescription key="titleFontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToZikirPage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O8E-dS-DDj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="iGZ-C9-VjU" secondAttribute="bottom" id="1ma-tC-qTc"/>
+                                            <constraint firstItem="BEa-sk-CMJ" firstAttribute="leading" secondItem="8tv-cD-sZK" secondAttribute="leading" id="6Dk-En-t1X"/>
+                                            <constraint firstItem="iGZ-C9-VjU" firstAttribute="top" secondItem="8tv-cD-sZK" secondAttribute="top" id="Fs5-LS-1Rq"/>
+                                            <constraint firstAttribute="trailing" secondItem="iGZ-C9-VjU" secondAttribute="trailing" id="LdP-gd-VDw"/>
+                                            <constraint firstAttribute="trailing" secondItem="BEa-sk-CMJ" secondAttribute="trailing" id="QD5-Uj-m92"/>
+                                            <constraint firstItem="iGZ-C9-VjU" firstAttribute="leading" secondItem="8tv-cD-sZK" secondAttribute="leading" id="WFu-aC-e0M"/>
+                                            <constraint firstItem="BEa-sk-CMJ" firstAttribute="top" secondItem="8tv-cD-sZK" secondAttribute="top" id="nh4-2M-Zv5"/>
+                                            <constraint firstAttribute="bottom" secondItem="BEa-sk-CMJ" secondAttribute="bottom" constant="25" id="vYS-cq-9Hl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5y-L2-2fR">
+                                        <rect key="frame" x="109.66666666666666" y="0.0" width="104.66666666666666" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cV7-eM-lFT">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="125"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqW-87-3Au">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="150"/>
+                                                <color key="tintColor" red="0.56875896449999996" green="0.26355147359999997" blue="0.87625700240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Prayer">
+                                                    <fontDescription key="titleFontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToPrayerPage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SBh-vi-y0D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="cV7-eM-lFT" secondAttribute="bottom" constant="25" id="19n-Cf-lzN"/>
+                                            <constraint firstAttribute="trailing" secondItem="cV7-eM-lFT" secondAttribute="trailing" id="8HX-9S-KBG"/>
+                                            <constraint firstItem="KqW-87-3Au" firstAttribute="leading" secondItem="F5y-L2-2fR" secondAttribute="leading" id="GyG-JO-8tz"/>
+                                            <constraint firstItem="cV7-eM-lFT" firstAttribute="top" secondItem="F5y-L2-2fR" secondAttribute="top" id="bNu-97-4Hf"/>
+                                            <constraint firstAttribute="trailing" secondItem="KqW-87-3Au" secondAttribute="trailing" id="lk5-MU-QPC"/>
+                                            <constraint firstItem="KqW-87-3Au" firstAttribute="top" secondItem="F5y-L2-2fR" secondAttribute="top" id="mjx-W8-4dF"/>
+                                            <constraint firstItem="cV7-eM-lFT" firstAttribute="leading" secondItem="F5y-L2-2fR" secondAttribute="leading" id="upa-Nz-x9R"/>
+                                            <constraint firstAttribute="bottom" secondItem="KqW-87-3Au" secondAttribute="bottom" id="vjA-yk-nt7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V03-ga-dZj">
+                                        <rect key="frame" x="219.33333333333334" y="0.0" width="104.66666666666666" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GJ-Ec-l62">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="125"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMu-FM-Tcv">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="150"/>
+                                                <color key="tintColor" red="0.01151572447" green="0.54579931500000001" blue="0.99394446609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Reading">
+                                                    <fontDescription key="titleFontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToReadingPage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wbh-QT-Luk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mMu-FM-Tcv" secondAttribute="trailing" id="3gA-nn-V8r"/>
+                                            <constraint firstAttribute="bottom" secondItem="3GJ-Ec-l62" secondAttribute="bottom" constant="25" id="FDy-20-Awf"/>
+                                            <constraint firstAttribute="trailing" secondItem="3GJ-Ec-l62" secondAttribute="trailing" id="HN0-LC-hfv"/>
+                                            <constraint firstItem="mMu-FM-Tcv" firstAttribute="top" secondItem="V03-ga-dZj" secondAttribute="top" id="Lfo-r9-0gJ"/>
+                                            <constraint firstItem="3GJ-Ec-l62" firstAttribute="leading" secondItem="V03-ga-dZj" secondAttribute="leading" id="Loa-ip-JHM"/>
+                                            <constraint firstAttribute="bottom" secondItem="mMu-FM-Tcv" secondAttribute="bottom" id="NWd-XM-vgx"/>
+                                            <constraint firstItem="3GJ-Ec-l62" firstAttribute="top" secondItem="V03-ga-dZj" secondAttribute="top" id="Ou4-EG-3t9"/>
+                                            <constraint firstItem="mMu-FM-Tcv" firstAttribute="leading" secondItem="V03-ga-dZj" secondAttribute="leading" id="odI-2n-QQ0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="324" id="dzD-Ln-FTV"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vIb-MP-37i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3Jw-nF-qLI"/>
+                    <constraint firstAttribute="bottom" secondItem="vIb-MP-37i" secondAttribute="bottom" constant="8" id="BQj-El-jbM"/>
+                    <constraint firstItem="vIb-MP-37i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="DVq-q0-TVn"/>
+                    <constraint firstAttribute="trailing" secondItem="vIb-MP-37i" secondAttribute="trailing" constant="15" id="Rwe-Ik-03J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="prayerButton" destination="KqW-87-3Au" id="Sze-vE-cHU"/>
+                <outlet property="prayerView" destination="cV7-eM-lFT" id="vzo-zP-Fo2"/>
+                <outlet property="readingButton" destination="mMu-FM-Tcv" id="OcD-j5-qvn"/>
+                <outlet property="readingView" destination="3GJ-Ec-l62" id="lqI-v4-cVs"/>
+                <outlet property="stackView" destination="vIb-MP-37i" id="w6p-Gd-lrP"/>
+                <outlet property="zikirButton" destination="iGZ-C9-VjU" id="aOU-jU-hzY"/>
+                <outlet property="zikirView" destination="BEa-sk-CMJ" id="0jM-u3-oGQ"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="71.83098591549296"/>
+        </tableViewCell>
+    </objects>
+</document>

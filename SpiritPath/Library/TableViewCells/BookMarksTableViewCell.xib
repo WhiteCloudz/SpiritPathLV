@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="KGk-i7-Jjw" customClass="BookMarksTableViewCell" customModule="SpiritPath" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="35"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXs-Zh-r8a">
+                        <rect key="frame" x="0.0" y="5" width="230" height="25"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-9a-pER">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Js7-Ld-0y0">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="25"/>
+                                        <color key="tintColor" red="0.65878492590000004" green="0.22030812499999999" blue="0.86051088570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="bookmark.fill" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blP-Lk-rfl">
+                                        <rect key="frame" x="209" y="0.0" width="21" height="25"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmarks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyg-7j-kb5">
+                                        <rect key="frame" x="41" y="0.0" width="111" height="25"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="15"/>
+                                        <color key="textColor" red="0.1256947219" green="0.10615409169999999" blue="0.30261421199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-81-9P7">
+                                        <rect key="frame" x="155" y="0.0" width="54" height="25"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
+                                        <color key="textColor" red="0.1256947219" green="0.10615409169999999" blue="0.30261421199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Js7-Ld-0y0" firstAttribute="top" secondItem="Bki-9a-pER" secondAttribute="top" id="8YS-Mi-V92"/>
+                                    <constraint firstItem="blP-Lk-rfl" firstAttribute="leading" secondItem="Bki-9a-pER" secondAttribute="leading" constant="209" id="GxW-2y-vLd"/>
+                                    <constraint firstItem="Js7-Ld-0y0" firstAttribute="leading" secondItem="Bki-9a-pER" secondAttribute="leading" id="ISy-Yq-RXR"/>
+                                    <constraint firstItem="J9v-81-9P7" firstAttribute="leading" secondItem="Oyg-7j-kb5" secondAttribute="trailing" constant="3" id="Pcl-Di-hKq"/>
+                                    <constraint firstItem="Oyg-7j-kb5" firstAttribute="top" secondItem="Bki-9a-pER" secondAttribute="top" id="Sky-ZS-DsS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Js7-Ld-0y0" secondAttribute="bottom" id="T61-OC-c4r"/>
+                                    <constraint firstItem="Oyg-7j-kb5" firstAttribute="leading" secondItem="Js7-Ld-0y0" secondAttribute="trailing" constant="2" id="UEa-sf-oHG"/>
+                                    <constraint firstAttribute="bottom" secondItem="blP-Lk-rfl" secondAttribute="bottom" id="aPZ-UT-hdq"/>
+                                    <constraint firstItem="blP-Lk-rfl" firstAttribute="leading" secondItem="Oyg-7j-kb5" secondAttribute="trailing" constant="57" id="gEc-HY-D9o"/>
+                                    <constraint firstAttribute="bottom" secondItem="J9v-81-9P7" secondAttribute="bottom" id="jGf-e2-2TV"/>
+                                    <constraint firstItem="J9v-81-9P7" firstAttribute="top" secondItem="Bki-9a-pER" secondAttribute="top" id="kcF-N1-NRO"/>
+                                    <constraint firstAttribute="trailing" secondItem="blP-Lk-rfl" secondAttribute="trailing" id="mdw-FH-u1e"/>
+                                    <constraint firstItem="blP-Lk-rfl" firstAttribute="leading" secondItem="J9v-81-9P7" secondAttribute="trailing" id="r9r-Wa-e33"/>
+                                    <constraint firstItem="blP-Lk-rfl" firstAttribute="top" secondItem="Bki-9a-pER" secondAttribute="top" id="ra4-w8-AlP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Js7-Ld-0y0" secondAttribute="trailing" constant="191" id="tkw-jc-Gcn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oyg-7j-kb5" secondAttribute="bottom" id="wAW-dk-6Dk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QXs-Zh-r8a" secondAttribute="bottom" constant="5" id="Pa2-kQ-ffj"/>
+                    <constraint firstItem="QXs-Zh-r8a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cZc-mQ-f4x"/>
+                    <constraint firstItem="QXs-Zh-r8a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dNh-0R-qpF"/>
+                    <constraint firstAttribute="trailing" secondItem="QXs-Zh-r8a" secondAttribute="trailing" id="np9-r4-tuP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bookDescription" destination="Oyg-7j-kb5" id="4e5-tc-nhi"/>
+                <outlet property="bookName" destination="blP-Lk-rfl" id="anw-So-Ww1"/>
+                <outlet property="bookPage" destination="J9v-81-9P7" id="v1h-Dq-zcP"/>
+                <outlet property="stackView" destination="QXs-Zh-r8a" id="bJX-6L-PMA"/>
+                <outlet property="view" destination="Bki-9a-pER" id="BNl-qP-XPw"/>
+            </connections>
+            <point key="canvasLocation" x="207.63358778625954" y="-56.690140845070424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
+    </resources>
+</document>
