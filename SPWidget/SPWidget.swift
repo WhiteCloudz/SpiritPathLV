@@ -138,15 +138,12 @@ private struct SmallWidgetContent: View {
 
     var body: some View {
         ZStack {
-            Image("background")
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .edgesIgnoringSafeArea(.all)
-              
-
+        
             VStack {
                 
+                Text("daily")
+                    .font(.system(size: 10))
+                    .foregroundColor(.clear)
                 
                 HStack {
                     Image("logo")
@@ -156,20 +153,26 @@ private struct SmallWidgetContent: View {
                         .cornerRadius(15)
 
                     Text("Daily Routine")
-                        .font(.system(size: 18))
-                        .foregroundColor(.black)
+                        .font(.system(size: 16))
+                        .foregroundColor(.cyan)
                 }
-                .padding(-5)
+                .padding(0)
 
                 let totalGoalValue = Double(entry.zikirGoalValue + entry.prayerGoalValue + entry.readingGoalValue)
                 let totalNowValue = Double(entry.zikirNowValue + entry.prayerNowValue + entry.readingNowValue)
-                CircularProgressBar(goalValue: totalGoalValue, nowValue: totalNowValue, goalColor: .clear, nowColor: .white)
-                    .frame(width: 120, height: 120)
-                    .padding(-5)
+                CircularProgressBar(goalValue: totalGoalValue, nowValue: totalNowValue, goalColor: .clear, nowColor: .cyan)
+                    .frame(width: 115, height: 120)
+                    .padding(0)
+                
+                Text("daily")
+                    .font(.system(size: 10))
+                    .foregroundColor(.clear)
+                
             }
-            .frame(maxWidth: .infinity, alignment: .bottom) 
+        
+            .frame(maxWidth: .infinity, alignment: .bottom)
         }
-        .padding(-60)
+        .padding(0)
     }
 }
 

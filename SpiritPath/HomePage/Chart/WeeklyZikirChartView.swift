@@ -53,15 +53,17 @@ class AllZikirChartView: UIView {
             }
         }
 
-        // Hide future days if necessary
-        if currentDay < weeklyData.count {
-            for index in currentDay..<weeklyData.count {
+        // Pazar günü itibariyle geçmiş verileri temizle
+        if currentWeekday == 0 {
+            for index in 0..<currentWeekday {
                 weeklyData[index] = 0.0
             }
         }
 
         return weeklyData
     }
+    
+    
     
     func drawChart() {
         subviews.forEach { $0.removeFromSuperview() }
